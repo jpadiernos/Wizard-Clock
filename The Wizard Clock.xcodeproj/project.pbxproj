@@ -10,11 +10,11 @@
 		653CD28E24551C0E009D3A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD28D24551C0E009D3A66 /* AppDelegate.swift */; };
 		653CD29024551C0E009D3A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD28F24551C0E009D3A66 /* SceneDelegate.swift */; };
 		653CD29224551C0E009D3A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD29124551C0E009D3A66 /* ViewController.swift */; };
-		653CD29524551C0E009D3A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653CD29324551C0E009D3A66 /* Main.storyboard */; };
 		653CD29724551C21009D3A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653CD29624551C21009D3A66 /* Assets.xcassets */; };
 		653CD29A24551C21009D3A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653CD29824551C21009D3A66 /* LaunchScreen.storyboard */; };
 		653CD2A524551C22009D3A66 /* The_Wizard_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD2A424551C22009D3A66 /* The_Wizard_ClockTests.swift */; };
 		653CD2B024551C22009D3A66 /* The_Wizard_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD2AF24551C22009D3A66 /* The_Wizard_ClockUITests.swift */; };
+		653CD2BD2455C327009D3A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653CD29324551C0E009D3A66 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653CD2BD2455C327009D3A66 /* Main.storyboard in Resources */,
 				653CD29A24551C21009D3A66 /* LaunchScreen.storyboard in Resources */,
 				653CD29724551C21009D3A66 /* Assets.xcassets in Resources */,
-				653CD29524551C0E009D3A66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
