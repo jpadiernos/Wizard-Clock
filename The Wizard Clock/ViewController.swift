@@ -10,11 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let mystring = "dude?"
-        
-        print(mystring)
+
+        var background = UIImage(named: "Sun_Background")
+        imageView.image = background
     }
 
 
