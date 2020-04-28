@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		03B2654F24580D7A0033C2D9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B2654E24580D7A0033C2D9 /* Theme.swift */; };
+		03B26551245816300033C2D9 /* ThemeSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B26550245816300033C2D9 /* ThemeSelected.swift */; };
+		03B265552458195C0033C2D9 /* ThemeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B265542458195C0033C2D9 /* ThemeSelectionViewController.swift */; };
+		03B26557245819920033C2D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B26556245819920033C2D9 /* LoginViewController.swift */; };
+		03B26559245819B30033C2D9 /* ThemeResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B26558245819B30033C2D9 /* ThemeResultsViewController.swift */; };
 		653CD28E24551C0E009D3A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD28D24551C0E009D3A66 /* AppDelegate.swift */; };
 		653CD29024551C0E009D3A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD28F24551C0E009D3A66 /* SceneDelegate.swift */; };
 		653CD29224551C0E009D3A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD29124551C0E009D3A66 /* ViewController.swift */; };
@@ -37,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		03B2654E24580D7A0033C2D9 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		03B26550245816300033C2D9 /* ThemeSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSelected.swift; sourceTree = "<group>"; };
+		03B265542458195C0033C2D9 /* ThemeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSelectionViewController.swift; sourceTree = "<group>"; };
+		03B26556245819920033C2D9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		03B26558245819B30033C2D9 /* ThemeResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeResultsViewController.swift; sourceTree = "<group>"; };
 		653CD28A24551C0E009D3A66 /* The Wizard Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Wizard Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		653CD28D24551C0E009D3A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		653CD28F24551C0E009D3A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				653CD29124551C0E009D3A66 /* ViewController.swift */,
+				03B26556245819920033C2D9 /* LoginViewController.swift */,
+				03B265542458195C0033C2D9 /* ThemeSelectionViewController.swift */,
+				03B26558245819B30033C2D9 /* ThemeResultsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -98,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				03B2654E24580D7A0033C2D9 /* Theme.swift */,
+				03B26550245816300033C2D9 /* ThemeSelected.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B26557245819920033C2D9 /* LoginViewController.swift in Sources */,
 				653CD29224551C0E009D3A66 /* ViewController.swift in Sources */,
 				03B2654F24580D7A0033C2D9 /* Theme.swift in Sources */,
 				653CD28E24551C0E009D3A66 /* AppDelegate.swift in Sources */,
+				03B265552458195C0033C2D9 /* ThemeSelectionViewController.swift in Sources */,
+				03B26551245816300033C2D9 /* ThemeSelected.swift in Sources */,
+				03B26559245819B30033C2D9 /* ThemeResultsViewController.swift in Sources */,
 				653CD29024551C0E009D3A66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
