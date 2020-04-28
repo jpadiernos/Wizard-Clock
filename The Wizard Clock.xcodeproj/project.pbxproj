@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B2654F24580D7A0033C2D9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B2654E24580D7A0033C2D9 /* Theme.swift */; };
 		653CD28E24551C0E009D3A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD28D24551C0E009D3A66 /* AppDelegate.swift */; };
 		653CD29024551C0E009D3A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD28F24551C0E009D3A66 /* SceneDelegate.swift */; };
 		653CD29224551C0E009D3A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653CD29124551C0E009D3A66 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03B2654E24580D7A0033C2D9 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		653CD28A24551C0E009D3A66 /* The Wizard Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Wizard Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		653CD28D24551C0E009D3A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		653CD28F24551C0E009D3A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		03B2654D24580BED0033C2D9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				03B2654E24580D7A0033C2D9 /* Theme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				653CD29224551C0E009D3A66 /* ViewController.swift in Sources */,
+				03B2654F24580D7A0033C2D9 /* Theme.swift in Sources */,
 				653CD28E24551C0E009D3A66 /* AppDelegate.swift in Sources */,
 				653CD29024551C0E009D3A66 /* SceneDelegate.swift in Sources */,
 			);
