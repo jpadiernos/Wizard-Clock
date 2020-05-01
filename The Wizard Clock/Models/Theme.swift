@@ -8,17 +8,35 @@
 
 import UIKit
 
-struct Theme {
-    let name: String
-//    enum themeType {
-//        case staticImage
-//        case animationImage
-//    }
-    let bgImage: UIImage
-    let hrImage: UIImage
-    let minImage: UIImage
-//    let tnImage: UIImage
-//    let description: String
+class Theme {
+    var name: String
     
+    init(){
+        self.name = "Theme"
+    }
+
+    func getBgImage() -> String {
+        return "Background"
+    }
+    
+    func getHrImage(hour: Int) -> String {
+        return "hour"
+    }
+    
+    func getMinImage(minute: Int) -> String {
+        return "minute"
+    }
+        
+    func getBGPosition() -> CGRect {
+        return UIScreen.main.bounds
+    }
+
+    func getHrPosition(hour: Int) -> CGRect{
+        return UIScreen.main.bounds
+    }
+    
+    func getMinPosition(minute: Int) -> CGRect{
+         return UIScreen.main.bounds
+    }
     
 }
