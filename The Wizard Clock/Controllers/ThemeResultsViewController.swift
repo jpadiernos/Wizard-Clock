@@ -10,23 +10,33 @@ import UIKit
 
 class ThemeResultsViewController: UIViewController {
 
-    var bgImage: UIImage?
-    var hrImage: UIImage?
-    var minImage: UIImage?
+    var themeName: String?
     
-    @IBOutlet weak var bgView: UIImageView!
-    @IBOutlet weak var hrView: UIImageView!
-    @IBOutlet weak var minView: UIImageView!
-    
-    
+    func drawImage(imageName: String, position: CGRect){
+        let image = UIImage(named: imageName)
+        let imageView = UIImageView(image: image!)
+        imageView.frame = position
+        view.addSubview(imageView)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bgView.image = bgImage
-        hrView.image = hrImage
-        minView.image = minImage
-
-        // Do any additional setup after loading the view.
+        let theme = NatureTheme()
+        
+        let clockTime = ClockTime()
+        
+        let screenSize: CGRect = theme.getBGPosition()
+        let hoursFrame: CGRect = theme.getHrPosition(hour: clockTime.getHour())
+        let minutesFrame: CGRect = theme.getMinPosition(minute: clockTime.getMinute())
+        
+        let backgroundName = theme.getBgImage()
+        let hoursName = theme.getHrImage(hour: clockTime.getHour())
+        let minutesName = theme.getMinImage(minute: clockTime.getMinute())
+        
+        drawImage(imageName: backgroundName, position: screenSize)
+        drawImage(imageName: hoursName, position: hoursFrame)
+        drawImage(imageName: minutesName, position: minutesFrame)
     }
     
     @IBAction func tapPressed(_ sender: UITapGestureRecognizer) {
