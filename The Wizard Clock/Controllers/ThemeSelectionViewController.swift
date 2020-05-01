@@ -57,16 +57,13 @@ class ThemeSelectionViewController: UIViewController {
     }
     
     @IBAction func displayThemePressed(_ sender: UIButton) {
-        themeSelected.buildTheme(themeName: themeName, bgName: bgName, hrName: hrName, minName: minName)
         self.performSegue(withIdentifier: "goToResults", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResults" {
             let destinationVC = segue.destination as! ThemeResultsViewController
-            destinationVC.bgImage = themeSelected.getBgImage()
-            destinationVC.hrImage = themeSelected.getHrImage()
-            destinationVC.minImage = themeSelected.getMinImage()
+            destinationVC.themeName = themeName
         }
     }
     

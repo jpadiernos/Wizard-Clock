@@ -7,21 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Wizard_Clock" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="870" y="849"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="FXL-tM-tXA">
             <objects>
@@ -127,7 +112,7 @@
         <!--Theme Selection View Controller-->
         <scene sceneID="3lW-8k-POH">
             <objects>
-                <viewController id="h8q-kc-utt" customClass="ThemeSelectionViewController" customModule="sampleWizardClock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h8q-kc-utt" customClass="ThemeSelectionViewController" customModule="The_Wizard_Clock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j0q-LJ-Y6X">
                         <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,51 +298,18 @@
         <!--Theme Results View Controller-->
         <scene sceneID="2XQ-Yo-G9y">
             <objects>
-                <viewController id="Xuu-8c-ad0" customClass="ThemeResultsViewController" customModule="sampleWizardClock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xuu-8c-ad0" customClass="ThemeResultsViewController" customModule="The_Wizard_Clock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9K-Uj-3gw">
                         <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clockart copy" translatesAutoresizingMaskIntoConstraints="NO" id="fPV-uu-kGy">
-                                <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ac8-qR-Ij4">
-                                <rect key="frame" x="71" y="212" width="627" height="442"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j1O-2P-0pk">
-                                <rect key="frame" x="813" y="104" width="240" height="170"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="sG6-Li-cGd"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="fPV-uu-kGy" firstAttribute="top" secondItem="rns-jo-CTR" secondAttribute="top" id="5Pz-Uj-WX0"/>
-                            <constraint firstItem="rns-jo-CTR" firstAttribute="trailing" secondItem="j1O-2P-0pk" secondAttribute="trailing" constant="27" id="7IO-a1-9f0"/>
-                            <constraint firstItem="fPV-uu-kGy" firstAttribute="leading" secondItem="rns-jo-CTR" secondAttribute="leading" id="LjY-3R-CsL"/>
-                            <constraint firstItem="j1O-2P-0pk" firstAttribute="top" secondItem="rns-jo-CTR" secondAttribute="top" constant="104" id="VGg-5G-8EB"/>
-                            <constraint firstItem="j1O-2P-0pk" firstAttribute="leading" secondItem="ac8-qR-Ij4" secondAttribute="trailing" constant="115" id="eA4-cT-qhH"/>
-                            <constraint firstItem="fPV-uu-kGy" firstAttribute="trailing" secondItem="rns-jo-CTR" secondAttribute="trailing" id="eMI-bZ-sVV"/>
-                            <constraint firstItem="ac8-qR-Ij4" firstAttribute="top" secondItem="rns-jo-CTR" secondAttribute="top" constant="212" id="gOz-SR-7CR"/>
-                            <constraint firstItem="ac8-qR-Ij4" firstAttribute="leading" secondItem="rns-jo-CTR" secondAttribute="leading" constant="71" id="non-9B-eAl"/>
-                            <constraint firstItem="rns-jo-CTR" firstAttribute="bottom" secondItem="j1O-2P-0pk" secondAttribute="bottom" constant="536" id="ptJ-iB-rJl"/>
-                            <constraint firstItem="rns-jo-CTR" firstAttribute="bottom" secondItem="ac8-qR-Ij4" secondAttribute="bottom" constant="156" id="tYD-qU-zQ2"/>
-                            <constraint firstItem="fPV-uu-kGy" firstAttribute="bottom" secondItem="rns-jo-CTR" secondAttribute="bottom" id="xfF-Kb-5Ro"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rns-jo-CTR"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="AeD-lu-TQk" appends="YES" id="bMo-RV-5uQ"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="zSG-QT-wKA"/>
-                    <connections>
-                        <outlet property="bgView" destination="fPV-uu-kGy" id="qYI-kA-5c1"/>
-                        <outlet property="hrView" destination="ac8-qR-Ij4" id="Gy6-3f-ESl"/>
-                        <outlet property="minView" destination="j1O-2P-0pk" id="dfp-3r-yNg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVm-Lq-qkB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" id="AeD-lu-TQk">
@@ -371,6 +323,5 @@
     </scenes>
     <resources>
         <image name="144" width="144" height="144"/>
-        <image name="clockart copy" width="341" height="224"/>
     </resources>
 </document>
