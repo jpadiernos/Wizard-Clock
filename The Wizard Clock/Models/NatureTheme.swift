@@ -8,15 +8,18 @@
 
 import UIKit
 
-struct NatureTheme {
+class NatureTheme: Theme {
     
-    let name: String = "Nature"
+    override init(){
+        super.init()
+        self.name = "Nature"
+    }
     
-    func getBgImage() -> String {
+    override func getBgImage() -> String {
         return "Nature_Background"
     }
     
-    func getHrImage(hour: Int) -> String {
+    override func getHrImage(hour: Int) -> String {
         var hourImage: String
         switch hour{
         case 1:
@@ -49,20 +52,20 @@ struct NatureTheme {
         return hourImage
     }
     
-    func getMinImage(minute: Int) -> String {
+    override func getMinImage(minute: Int) -> String {
         return "Nature_Bird"
     }
         
-    func getBGPosition() -> CGRect {
+    override func getBGPosition() -> CGRect {
         return UIScreen.main.bounds
     }
 
-    func getHrPosition(hour: Int) -> CGRect{
+    override func getHrPosition(hour: Int) -> CGRect{
         let screenSize = UIScreen.main.bounds
         return CGRect(x: 0, y: Int(0.66*screenSize.height), width: Int(screenSize.width) , height: Int(0.33*screenSize.height))
     }
     
-    func getMinPosition(minute: Int) -> CGRect{
+    override func getMinPosition(minute: Int) -> CGRect{
         let imageHeight = 20
         let imageWidth = 50
         let screenSize = UIScreen.main.bounds

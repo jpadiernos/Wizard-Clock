@@ -10,7 +10,7 @@ import UIKit
 
 class ThemeResultsViewController: UIViewController {
 
-    var themeName: String?
+    var themeName: String = "Nature"
     
     func drawImage(imageName: String, position: CGRect){
         let image = UIImage(named: imageName)
@@ -18,11 +18,22 @@ class ThemeResultsViewController: UIViewController {
         imageView.frame = position
         view.addSubview(imageView)
     }
+    
+    func getTheme(themeName: String) -> Theme{
+        var theme: Theme
+        switch themeName{
+        case "Nature":
+            theme = NatureTheme()
+        default:
+            theme = Theme()
+        }
+        return theme
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let theme = NatureTheme()
+        let theme = getTheme(themeName: themeName)
         
         let clockTime = ClockTime()
         
