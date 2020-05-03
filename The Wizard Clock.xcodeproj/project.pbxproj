@@ -21,6 +21,8 @@
 		653CD2BD2455C327009D3A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653CD29324551C0E009D3A66 /* Main.storyboard */; };
 		65CF111E245B51CD003666C2 /* ClockTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF111D245B51CD003666C2 /* ClockTime.swift */; };
 		65CF1120245B53AB003666C2 /* NatureTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF111F245B53AB003666C2 /* NatureTheme.swift */; };
+		65CF1122245CB9D4003666C2 /* BinaryTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF1121245CB9D4003666C2 /* BinaryTheme.swift */; };
+		65CF1124245E589F003666C2 /* JerseyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF1123245E589F003666C2 /* JerseyTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		653CD2B124551C22009D3A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65CF111D245B51CD003666C2 /* ClockTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTime.swift; sourceTree = "<group>"; };
 		65CF111F245B53AB003666C2 /* NatureTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureTheme.swift; sourceTree = "<group>"; };
+		65CF1121245CB9D4003666C2 /* BinaryTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTheme.swift; sourceTree = "<group>"; };
+		65CF1123245E589F003666C2 /* JerseyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JerseyTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				03B2654E24580D7A0033C2D9 /* Theme.swift */,
 				65CF111F245B53AB003666C2 /* NatureTheme.swift */,
 				65CF111D245B51CD003666C2 /* ClockTime.swift */,
+				65CF1121245CB9D4003666C2 /* BinaryTheme.swift */,
+				65CF1123245E589F003666C2 /* JerseyTheme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65CF1124245E589F003666C2 /* JerseyTheme.swift in Sources */,
 				03B26557245819920033C2D9 /* LoginViewController.swift in Sources */,
 				653CD29224551C0E009D3A66 /* ViewController.swift in Sources */,
 				03B2654F24580D7A0033C2D9 /* Theme.swift in Sources */,
@@ -309,6 +316,7 @@
 				03B265552458195C0033C2D9 /* ThemeSelectionViewController.swift in Sources */,
 				65CF111E245B51CD003666C2 /* ClockTime.swift in Sources */,
 				03B26559245819B30033C2D9 /* ThemeResultsViewController.swift in Sources */,
+				65CF1122245CB9D4003666C2 /* BinaryTheme.swift in Sources */,
 				653CD29024551C0E009D3A66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

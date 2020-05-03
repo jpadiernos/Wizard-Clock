@@ -10,13 +10,14 @@ import UIKit
 
 class ThemeSelectionViewController: UIViewController {
 
-    var themeSelected = ThemeSelected()
     var themeName = "Nature"
     var bgName = "Default"
     var hrName = "Trees"
     var minName = "Sun"
     
     @IBOutlet weak var themeNatureButton: UIButton!
+    
+    @IBOutlet weak var themeJerseyButton: UIButton!
     
     @IBOutlet weak var bgDefaultButton: UIButton!
     
@@ -33,6 +34,7 @@ class ThemeSelectionViewController: UIViewController {
     
     @IBAction func themeChange(_ sender: UIButton) {
         themeNatureButton.isSelected = false
+        themeJerseyButton.isSelected = false
         sender.isSelected = true
         themeName = sender.currentTitle!
     }
