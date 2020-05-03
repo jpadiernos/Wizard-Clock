@@ -176,7 +176,7 @@ class JerseyTheme: Theme {
         case 59:
             minuteImage = "Jersey_Minute_59"
         default:
-            minuteImage = "Jersey_Hour_0"
+            minuteImage = "Jersey_Minute_0"
         }
         return minuteImage
     }
