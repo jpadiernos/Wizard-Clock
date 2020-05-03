@@ -145,8 +145,8 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="feQ-UI-eM3" userLabel="Middle Left View">
                                                         <rect key="frame" x="0.0" y="0.0" width="436" height="268"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xi0-cq-X7r" userLabel="Theme Stack View">
-                                                                <rect key="frame" x="117.5" y="0.0" width="201" height="134"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Xi0-cq-X7r" userLabel="Theme Stack View">
+                                                                <rect key="frame" x="58.5" y="0.0" width="319.5" height="134"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV4-m9-swL">
                                                                         <rect key="frame" x="0.0" y="49" width="90.5" height="36"/>
@@ -154,8 +154,15 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlA-Kb-Yeq" userLabel="Theme Jersey Button">
+                                                                        <rect key="frame" x="114.5" y="52" width="90.5" height="30"/>
+                                                                        <state key="normal" title="Jersey"/>
+                                                                        <connections>
+                                                                            <action selector="themeChange:" destination="h8q-kc-utt" eventType="touchUpInside" id="RnV-Jc-qOd"/>
+                                                                        </connections>
+                                                                    </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-qt-cUK">
-                                                                        <rect key="frame" x="110.5" y="43" width="90.5" height="48"/>
+                                                                        <rect key="frame" x="229" y="43" width="90.5" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                                         <state key="normal" title="Nature"/>
                                                                         <connections>
@@ -287,13 +294,14 @@
                         <outlet property="hrTreesButton" destination="uGX-0h-OQN" id="OI9-u9-Hdt"/>
                         <outlet property="minBirdButton" destination="22D-xT-hdk" id="lRC-SA-zOe"/>
                         <outlet property="minSunButton" destination="lhE-hb-D9n" id="baK-tW-86e"/>
+                        <outlet property="themeJerseyButton" destination="wlA-Kb-Yeq" id="UkQ-8b-fVi"/>
                         <outlet property="themeNatureButton" destination="eP6-qt-cUK" id="W2F-Sl-Hw4"/>
                         <segue destination="Xuu-8c-ad0" kind="show" identifier="goToResults" id="ImX-fs-qz7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTN-oW-eHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="2302"/>
+            <point key="canvasLocation" x="132.77777777777777" y="2301.4814814814813"/>
         </scene>
         <!--Theme Results View Controller-->
         <scene sceneID="2XQ-Yo-G9y">
