@@ -139,14 +139,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-fB-VUU" userLabel="Middle View">
                                         <rect key="frame" x="0.0" y="271" width="1080" height="268"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="208" translatesAutoresizingMaskIntoConstraints="NO" id="agJ-ck-9RO">
-                                                <rect key="frame" x="0.0" y="0.0" width="1080" height="268"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="208" translatesAutoresizingMaskIntoConstraints="NO" id="agJ-ck-9RO">
+                                                <rect key="frame" x="8" y="-8" width="1080" height="268"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="feQ-UI-eM3" userLabel="Middle Left View">
                                                         <rect key="frame" x="0.0" y="0.0" width="436" height="268"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Xi0-cq-X7r" userLabel="Theme Stack View">
-                                                                <rect key="frame" x="58.5" y="0.0" width="319.5" height="134"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Xi0-cq-X7r" userLabel="Theme Stack View">
+                                                                <rect key="frame" x="98.5" y="0.0" width="239" height="134"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV4-m9-swL">
                                                                         <rect key="frame" x="0.0" y="49" width="90.5" height="36"/>
@@ -154,21 +154,33 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlA-Kb-Yeq" userLabel="Theme Jersey Button">
-                                                                        <rect key="frame" x="114.5" y="52" width="90.5" height="30"/>
-                                                                        <state key="normal" title="Jersey"/>
-                                                                        <connections>
-                                                                            <action selector="themeChange:" destination="h8q-kc-utt" eventType="touchUpInside" id="RnV-Jc-qOd"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-qt-cUK">
-                                                                        <rect key="frame" x="229" y="43" width="90.5" height="48"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                        <state key="normal" title="Nature"/>
-                                                                        <connections>
-                                                                            <action selector="themeChange:" destination="h8q-kc-utt" eventType="touchUpInside" id="EBc-pn-ZUl"/>
-                                                                        </connections>
-                                                                    </button>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1gk-Wn-5a1">
+                                                                        <rect key="frame" x="148.5" y="13" width="90.5" height="108"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlA-Kb-Yeq" userLabel="Theme Jersey Button">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="90.5" height="30"/>
+                                                                                <state key="normal" title="Jersey"/>
+                                                                                <connections>
+                                                                                    <action selector="themeChange:" destination="h8q-kc-utt" eventType="touchUpInside" id="RnV-Jc-qOd"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-qt-cUK">
+                                                                                <rect key="frame" x="0.0" y="30" width="90.5" height="48"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                                <state key="normal" title="Nature"/>
+                                                                                <connections>
+                                                                                    <action selector="themeChange:" destination="h8q-kc-utt" eventType="touchUpInside" id="EBc-pn-ZUl"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9N-PO-4fJ" userLabel="Theme Binary Button">
+                                                                                <rect key="frame" x="0.0" y="78" width="90.5" height="30"/>
+                                                                                <state key="normal" title="Binary"/>
+                                                                                <connections>
+                                                                                    <action selector="themeChange:" destination="h8q-kc-utt" eventType="touchUpInside" id="eeb-3A-6C3"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IkK-uL-I0n" userLabel="Background Stack View">
@@ -294,6 +306,7 @@
                         <outlet property="hrTreesButton" destination="uGX-0h-OQN" id="OI9-u9-Hdt"/>
                         <outlet property="minBirdButton" destination="22D-xT-hdk" id="lRC-SA-zOe"/>
                         <outlet property="minSunButton" destination="lhE-hb-D9n" id="baK-tW-86e"/>
+                        <outlet property="themeBinaryButton" destination="i9N-PO-4fJ" id="fl3-0M-sCW"/>
                         <outlet property="themeJerseyButton" destination="wlA-Kb-Yeq" id="UkQ-8b-fVi"/>
                         <outlet property="themeNatureButton" destination="eP6-qt-cUK" id="W2F-Sl-Hw4"/>
                         <segue destination="Xuu-8c-ad0" kind="show" identifier="goToResults" id="ImX-fs-qz7"/>

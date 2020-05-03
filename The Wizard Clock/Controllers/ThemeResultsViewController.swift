@@ -26,6 +26,8 @@ class ThemeResultsViewController: UIViewController {
             theme = NatureTheme()
         case "Jersey":
             theme = JerseyTheme()
+        case "Binary":
+            theme = BinaryTheme()
         default:
             theme = Theme()
         }
